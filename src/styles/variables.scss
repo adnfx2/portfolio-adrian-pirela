@@ -1,0 +1,127 @@
+//variables styles took from Bounties.Network Project (@ethBounties).
+
+// SPACING (Based on an 8pt scale)
+$base-spacing: 0.5rem; // 8px
+$s-spacing: $base-spacing / 2; // 4px
+$m-spacing: $base-spacing * 2; // 16px
+$l-spacing: $base-spacing * 3; // 24px
+$xl-spacing: $base-spacing * 4; // 32px
+$xxl-spacing: $base-spacing * 5; // 40px
+
+// SIZES
+$base-border-width: 1px;
+$base-border-radius: 8px;
+$base-input-height: $xxl-spacing;
+$base-checkbox-size: $m-spacing * 1.25;
+$base-toggle-size: 1.187rem;
+$filterNav-width-small: 14rem;
+$filterNav-width-large: 20rem;
+
+$header-height-sm: 3.5rem;
+$header-height-lg: 4rem;
+$sidebar-width-sm: $header-height-sm;
+$sidebar-width-lg: $header-height-lg;
+$sidebar-width-xl: 14rem;
+
+$circle-sm: $xl-spacing;
+$circle-md: $xl-spacing * 2;
+$circle-lg: $xxl-spacing * 2;
+
+// TYPOGRAPHY
+$base-font-size: 16px;
+$body-small-font-size: 0.75rem; // 12px
+$body-font-size: 0.875rem; // 14px
+
+$h5-font-size: 0.875rem; // 14px
+$h4-font-size: 1rem; // 16px
+$h3-font-size: 1.25rem; // 20px
+$h2-font-size: 1.563rem; // 25px
+$h1-font-size: 1.938rem; // 31px
+
+//ADDON
+$xl-font-size: 3.5rem;
+
+$base-line-height: 1.5rem;
+$line-height-small: 1.3rem;
+$line-height-large: 1.875rem;
+$line-height-reset: 1;
+//ADDON
+
+$navlink-font-size: 1.1em;
+$strong-font-weight: 700;
+$soft-font-weight: 300;
+
+$line-height-xl: 2;
+
+// COLORS
+$brand-purple: #5a28c6;
+$brand-purple-hover: #47209d;
+$brand-purple-disabled: #9673e3;
+$brand-dark-purple: #2e2a35;
+
+$brand-destructive: #e17582;
+$brand-destructive-hover: #ad4350;
+$brand-red: $brand-destructive;
+
+$brand-blue: #4a93ff;
+$brand-blue-hover: #307ae8;
+
+$brand-orange: #fbaa31;
+
+$brand-green: #6fc78d;
+$brand-green-hover: #4bb971;
+
+$brand-black: #111318;
+$brand-darkGrey: #434751;
+$brand-grey: #868e9c; // Lightest text
+$brand-mediumGrey: #d8dadf;
+$brand-lightGrey: #e6e7ea;
+$brand-nearWhite: #f2f4f8;
+$brand-white: #ffffff;
+$brand-purpleWhite: #cebeff;
+
+$base-input-background: #faf9fd;
+
+$base-border-color: $brand-lightGrey;
+
+//ADDON
+$ux-black: #373e46;
+$ux-white: #eff1f7;
+$ux-grey: #867b7b;
+$ux-dull-grey: #98a0ad;
+
+
+// BANNER
+@mixin banner-gradient {
+  background: linear-gradient(to right, $brand-purple, $brand-blue-hover);
+}
+$banner-min-height: 13rem;
+
+// SIDEBAR
+$sidebar-color: $brand-dark-purple;
+
+// BOX SHADOWS
+$base-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.075);
+$dark-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.125);
+$m-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+$brand-chip-box-shadow: 0 2px 7px $brand-lightGrey;
+$brand-card-box-shadow: 0 0 10px $brand-lightGrey;
+$brand-bountyCard-box-shadow: 0 0 10px $brand-lightGrey;
+$brand-input-box-shadow: 0 0 0 2px $brand-blue;
+$brand-input-box-destructive-shadow: 0 0 0 2px $brand-destructive;
+
+// BORDERS
+$base-border: $base-border-width solid $brand-lightGrey;
+$light-border: $base-border-width solid $brand-nearWhite;
+
+// Overlay
+$overlay-color: darken($brand-dark-purple, 15%);
+$overlay-background: rgba($overlay-color, 0.65);
+
+//ADDON
+//DEVICES
+$tablet: 478px;
+$desktop: 768px;
+
+//PADDING
+$p-1: 1rem;

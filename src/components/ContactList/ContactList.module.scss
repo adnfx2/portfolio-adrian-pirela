@@ -1,0 +1,29 @@
+@import "../../styles/variables.scss";
+
+.c-list {
+  display: grid;
+  grid-gap: 1rem 0;
+}
+
+.c-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 1rem 0.7rem;
+  align-items: center;
+
+  & a {
+    color: inherit;
+  }
+
+  &__media {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px $ux-grey;
+    padding: 0.5rem;
+    border-radius: 10px;
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

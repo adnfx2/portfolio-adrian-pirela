@@ -1,0 +1,17 @@
+@import "../../styles/variables.scss";
+
+.contact {
+  color: $ux-black;
+  &__title {
+    margin: 3rem;
+    font-size: $h1-font-size;
+    font-weight: $soft-font-weight;
+    text-align: center;
+  }
+  &__list {
+    margin: 1.5rem 1.5rem 3rem 1.5rem;
+  }
+  &__subtitle {
+    margin-left: 1.5rem;
+  }
+}

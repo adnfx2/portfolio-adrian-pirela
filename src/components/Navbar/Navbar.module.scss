@@ -1,0 +1,70 @@
+@import "../../styles/variables.scss";
+
+.nav {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+
+  @media screen and (min-width: $tablet) {
+    flex-flow: row;
+  }
+
+  &__list {
+    display: flex;
+    flex-flow: column;
+    height: 0;
+
+    border-top: $base-border-width solid rgba($brand-black, 0.1);
+    overflow: hidden;
+    transition: all 200ms ease-in;
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-flow: row;
+      flex: 1 1 0;
+      height: 100%;
+      border-top: none;
+      transition: none;
+    }
+
+    @media screen and (min-width: $desktop) {
+      position: sticky;
+      flex-flow: column;
+      min-height: 100vh;
+      padding-top: 5.5rem;
+    }
+  }
+  &__listItem {
+    flex: 1;
+    @media screen and (min-width: $desktop) {
+      flex: initial;
+    }
+
+    .isActive {
+      color: $brand-blue;
+    }
+
+    a {
+      display: flex;
+      justify-content: center;
+      opacity: 0.6;
+      color: $brand-white;
+      font-size: 1.1rem;
+      font-weight: $strong-font-weight;
+      line-height: 3;
+      text-decoration: none;
+      transition: 300ms;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+//STATES
+
+//Mobile menu open
+.isOpen {
+  height: 161px;
+}

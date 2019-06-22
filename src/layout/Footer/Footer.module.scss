@@ -1,0 +1,30 @@
+@import "../../styles/variables.scss";
+
+.footer {
+  grid-area: footer;
+  background: $brand-white;
+  align-self: center;
+  padding: 2rem 0;
+  &__list{
+    display: flex;
+    justify-content: space-around;
+  }
+  &__link{
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 300ms;
+
+    & img {
+      width: 24px;
+      height: 24px;
+    }
+
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+}
