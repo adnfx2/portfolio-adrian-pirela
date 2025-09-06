@@ -8,7 +8,7 @@
     "header"
     "main"
     "footer";
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: variables.$desktop) {
     grid-template-columns: minmax(270px, 300px) auto;
     grid-template-rows: 1fr auto;
     grid-template-areas:

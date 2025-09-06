@@ -7,15 +7,21 @@ import Main from "../Main/Main";
 //import Footer from "../Footer/Footer";
 //import ScrollToTop from "./ScrollToTop";
 ////Styles
-// import style from "./App.module.scss";
+import style from "./App.module.scss";
 
 import { HashRouter } from "react-router";
+
+function GridContainer({ children }) {
+  return <div className={style.app}>{children}</div>;
+}
 
 function App() {
   return (
     <HashRouter>
-      <Header />
-      <Main />
+      <GridContainer>
+        <Header />
+        <Main />
+      </GridContainer>
     </HashRouter>
   );
 }
