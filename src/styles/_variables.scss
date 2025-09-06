@@ -1,8 +1,9 @@
+@use "sass:color";
 //variables styles took from Bounties.Network Project (@ethBounties).
 
 // SPACING (Based on an 8pt scale)
 $base-spacing: 0.5rem; // 8px
-$s-spacing: $base-spacing / 2; // 4px
+$s-spacing: $base-spacing * 0.5; // 4px
 $m-spacing: $base-spacing * 2; // 16px
 $l-spacing: $base-spacing * 3; // 24px
 $xl-spacing: $base-spacing * 4; // 32px
@@ -90,7 +91,6 @@ $ux-white: #eff1f7;
 $ux-grey: #867b7b;
 $ux-dull-grey: #98a0ad;
 
-
 // BANNER
 @mixin banner-gradient {
   background: linear-gradient(to right, $brand-purple, $brand-blue-hover);
@@ -115,7 +115,7 @@ $base-border: $base-border-width solid $brand-lightGrey;
 $light-border: $base-border-width solid $brand-nearWhite;
 
 // Overlay
-$overlay-color: darken($brand-dark-purple, 15%);
+$overlay-color: color.adjust($brand-dark-purple, $lightness: -15%);
 $overlay-background: rgba($overlay-color, 0.65);
 
 //ADDON

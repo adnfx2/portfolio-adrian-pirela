@@ -1,15 +1,20 @@
 //Libraries
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { useState } from "react";
+import { NavLink } from "react-router";
 //Components
 import Hamburger from "../Hamburgers/Hamburgers";
 //Styles
 import style from "./Navbar.module.scss";
 
-const Navbar = props => {
+function Navbar() {
   const [toggleMobileMenu, setToggleMobileMenu] = useState(false);
-  const mobileMenuHandler = e => setToggleMobileMenu(prevState => !prevState);
-  const menuSelectionHandler = e => setToggleMobileMenu(() => false);
+
+  function mobileMenuHandler() {
+    setToggleMobileMenu((prevState) => !prevState);
+  }
+  function menuSelectionHandler() {
+    setToggleMobileMenu(() => false);
+  }
 
   return (
     <nav className={style.nav}>
@@ -18,15 +23,13 @@ const Navbar = props => {
         onClick={mobileMenuHandler}
       />
       <ul
-        className={`${style.nav__list} ${
-            toggleMobileMenu ? style.isOpen : ""
-          }`}
+        className={`${style.nav__list} ${toggleMobileMenu ? style.isOpen : ""}`}
       >
         <li className={style.nav__listItem}>
           <NavLink
             onClick={menuSelectionHandler}
             to="/about"
-            activeClassName={style.isActive}
+            className={({ isActive }) => (isActive ? style.active : "")}
           >
             About
           </NavLink>
@@ -35,7 +38,7 @@ const Navbar = props => {
           <NavLink
             onClick={menuSelectionHandler}
             to="/skills"
-            activeClassName={style.isActive}
+            className={({ isActive }) => (isActive ? style.active : "")}
           >
             Skills
           </NavLink>
@@ -44,7 +47,7 @@ const Navbar = props => {
           <NavLink
             onClick={menuSelectionHandler}
             to="/contact"
-            activeClassName={style.isActive}
+            className={({ isActive }) => (isActive ? style.active : "")}
           >
             Contact
           </NavLink>
@@ -52,6 +55,6 @@ const Navbar = props => {
       </ul>
     </nav>
   );
-};
+}
 
 export default Navbar;

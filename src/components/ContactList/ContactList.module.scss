@@ -1,4 +1,4 @@
-@import "../../styles/variables.scss";
+@use "../../styles/variables.scss";
 
 .c-list {
   display: grid;
@@ -18,7 +18,7 @@
   &__media {
     display: flex;
     align-items: center;
-    box-shadow: 0 0 10px $ux-grey;
+    box-shadow: 0 0 10px variables.$ux-grey;
     padding: 0.5rem;
     border-radius: 10px;
     img {

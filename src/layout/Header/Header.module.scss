@@ -1,6 +1,6 @@
-@import "../../styles/variables.scss";
+@use "../../styles/variables.scss";
 
-.header{
+.header {
   grid-area: header;
   background: teal;
 }

@@ -1,8 +1,8 @@
-@import "../../styles/variables.scss";
+@use "../../styles/variables.scss";
 
 .footer {
   grid-area: footer;
-  background: $brand-white;
+  background: variables.$brand-white;
   align-self: center;
   padding: 2rem 0;
   &__list{
