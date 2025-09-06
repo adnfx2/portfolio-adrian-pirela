@@ -2,34 +2,34 @@ import * as urls from "./mediaUrls";
 
 export const telnum = {
   name: "Tel.",
-  img: require("../assets/phone.svg"),
-  content: "+58-412-7665245"
+  img: "phone.svg",
+  content: "(407)-942-4515",
 };
 
 export const email = {
   name: "Email",
-  img: require("../assets/mail.svg"),
+  img: "mail.svg",
   content: "fx.adrian@gmail.com",
-  url: urls.mailUrl
+  url: urls.mailUrl,
 };
 
 export const linkedin = {
   name: "Linkedin",
-  img: require("../assets/linkedin2.svg"),
+  img: "linkedin2.svg",
   content: "Linkedin >>",
-  url: urls.linkedinUrl
+  url: urls.linkedinUrl,
 };
 
 export const twitter = {
   name: "Twitter",
-  img: require("../assets/twitter.svg"),
+  img: "twitter.svg",
   content: "Twitter >>",
-  url: urls.twitterUrl
+  url: urls.twitterUrl,
 };
 
 export const github = {
   name: "Github",
-  img: require("../assets/github.svg"),
+  img: "github.svg",
   content: "Github >>",
-  url: urls.githubUrl
+  url: urls.githubUrl,
 };

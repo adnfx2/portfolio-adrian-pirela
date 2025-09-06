@@ -4,7 +4,7 @@
 ////Components
 import Header from "../Header/Header";
 import Main from "../Main/Main";
-//import Footer from "../Footer/Footer";
+import Footer from "../Footer/Footer";
 //import ScrollToTop from "./ScrollToTop";
 ////Styles
 import style from "./App.module.scss";
@@ -21,6 +21,7 @@ function App() {
       <GridContainer>
         <Header />
         <Main />
+        <Footer />
       </GridContainer>
     </HashRouter>
   );
