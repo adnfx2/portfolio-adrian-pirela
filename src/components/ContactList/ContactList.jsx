@@ -6,7 +6,7 @@ import style from "./ContactList.module.scss";
 //ContactInfo
 import * as contactInfo from "../../myContactInfo/myContactInfo";
 
-const ContactList = (props) => {
+function ContactList() {
   const myContactInfo = _.values(contactInfo);
 
   const CustomLink = ({ url, children }) => (
@@ -45,6 +45,6 @@ const ContactList = (props) => {
       })}
     </div>
   );
-};
+}
 
 export default ContactList;
