@@ -5,3 +5,5 @@ Wake Forest, NC | 407-942-4515 | linkedin.com/in/adrian-pirela-67106978 | github
 ### Professional Summary
 
 Front-End Developer with hands-on experience in React, JavaScript, and RESTful API integration. Currently contributing at Amazon and building real-world applications through Springboard’s intensive software development program. Strong foundation in responsive design, UI optimization, and collaborative development. Eager to grow into full-stack development with Node.js and cloud-native technologies like AWS.
+
+(This repo is currently being upgrated to newer react version and build tool CRA to Vite)
