@@ -22,7 +22,6 @@ function Footer() {
 
 function renderMediaList(medias) {
   return medias.map((media) => {
-    const imgUrl = new URL(`../../assets/${media.img}`, import.meta.url).href;
     return (
       <Fragment key={media.name}>
         <li className={style.footer__listItem}>
@@ -32,7 +31,7 @@ function renderMediaList(medias) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={imgUrl} alt={media.name} />
+            <img src={media.img} alt={media.name} />
           </a>
         </li>
       </Fragment>
