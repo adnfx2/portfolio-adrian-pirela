@@ -15,8 +15,8 @@ function ContactForm() {
     formRef.current.reset();
   }
   return (
-    <form ref={formRef} onSubmit={onSubmit}>
-      <fieldset>
+    <form className={style.form} ref={formRef} onSubmit={onSubmit}>
+      <fieldset className={style.form__fields}>
         <legend>Contact info</legend>
         <input type="text" name="name" id="name" placeholder="name" />
         <input type="email" name="email" id="email" placeholder="email" />
@@ -25,7 +25,9 @@ function ContactForm() {
           id="message"
           placeholder="Hi, I would like to connect..."
         />
-        <button type="submit">Send</button>
+        <button className={style.form__btn} type="submit">
+          Send
+        </button>
       </fieldset>
     </form>
   );
